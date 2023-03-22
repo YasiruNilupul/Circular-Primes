@@ -1,10 +1,11 @@
-num='17'
+num='242342425'
 j=1
 k=0
 h=0
 primes=[]
 random_num="" 
 for k in range(len(num)-1):
+ random_num=''
  for i in range(1,len(num)):
     random_num= random_num+num[j]
     if j==len(num)-1 or j==0:
@@ -22,8 +23,8 @@ for k in range(len(num)-1):
   else:
       j=2
   
-  random_num=''
-#random_num=int(random_num)
+  
+random_num=int(random_num)
 def circu_num(numb):
     h=0
     for l in range(1,numb+1):
@@ -31,6 +32,6 @@ def circu_num(numb):
            h+=1
     if h==2:
         primes.append(numb)
-circu_num(5)
+circu_num(random_num)
 print(len(primes))
 print(primes)
