@@ -33,7 +33,7 @@ for num in range(110,111):
       
        if j>=2:
          j+=1
-       elif len(num)==2:
+       if len(num)==2:
          j=1
        elif len(num)>=3:
          j=2
