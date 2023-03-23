@@ -2,7 +2,7 @@
 j=1
 primes=[]
 #random_num=0
-for num in range(12,13):
+for num in range(110,111):
     #random_num="" 
     num=str(num)
     for k in range(len(num)-1):
@@ -17,10 +17,9 @@ for num in range(12,13):
             if k>0:
              j+=1
         else:
-            j+=1                        #the code is running for 2 number numbers after changing j value
- #j=0
+            j+=1                        
      if j==0 or j>1 :
-       print(random_num)
+       #print(random_num)
      
        h=0
        random_num=int(random_num)
@@ -34,7 +33,12 @@ for num in range(12,13):
       
        if j>=2:
          j+=1
-       else:
-           j=2
+       elif len(num)==2:
+         j=1
+       elif len(num)>=3:
+         j=2
+print(j)
 print(len(primes))
+print(primes)
+#print(j)
 #print(primes)
